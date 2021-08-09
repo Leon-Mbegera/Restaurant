@@ -9,6 +9,7 @@ const about =()=> {
   section.append(heading);
 
   const large_div = document.createElement('div');
+  large_div.className = 'large_div';
 
   const left_div = document.createElement('div');
   left_div.setAttribute("src", "./images/Coffee.jpeg");
