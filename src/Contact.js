@@ -20,5 +20,6 @@ const contact_us = () => {
       </div>
     </div>
   `;
-
+  return contact;
 };
+export default contact_us
