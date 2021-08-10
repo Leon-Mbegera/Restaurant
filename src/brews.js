@@ -82,3 +82,12 @@ const coffeeMenu = () => {
   
   return menu;
 };
+
+const showMenu = () => {
+  const mainMenu = document.createElement('div');
+  mainMenu.textContent = '';
+  mainMenu.appendChild(CoffeMenu);
+  return mainMenu;
+};
+
+export default showMenu;
