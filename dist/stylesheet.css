@@ -1,3 +1,7 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   margin: 0 1rem;
 
@@ -20,5 +24,26 @@ body {
   padding-bottom: 10px;
   border-bottom: 5px solid brown;
 }
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+}
+
+.large-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.big-image {
+  height: 27rem;
+  width: 50rem;
+}
+
+.paragraph {
+  width: 20rem;
+  margin: 0 auto;
+}
+
 
 
