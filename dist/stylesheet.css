@@ -54,3 +54,9 @@ body {
 .contactUs {
   text-align: center;
 }
+
+form > input, textarea {
+  display: block;
+  margin-bottom: 2rem;
+  margin-left: 32%;
+}
