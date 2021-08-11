@@ -23,6 +23,7 @@ const coffeeBrewMenu = (brew_image, brew_name, brew_desc, brew_price,) => {
 
 const coffeeMenu = () => {
   const menu = document.createElement('div');
+  menu.className = 'menu-grid';
 
     menu.appendChild(coffeeBrewMenu(
       './images/cappuccino.jpg',
@@ -30,14 +31,6 @@ const coffeeMenu = () => {
       'Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam',
       'ksh. 1,350'
       ),
-    );
-
-    menu.appendChild(coffeeBrewMenu(
-      './images/cappuccino.jpg',
-      'Cappuccino',
-      'Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam',
-      'ksh. 1,350'
-       ),
     );
 
     menu.appendChild(coffeeBrewMenu(
