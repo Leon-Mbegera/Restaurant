@@ -8,15 +8,18 @@ const header = () => {
 
   const img_div = document.createElement('div');
   const logo = document.createElement('img');
-  logo.className = 'shop_logo'
+  logo.className = 'shop-logo'
   logo.setAttribute("src", "./images/logo.png");
   img_div.append(logo);
   navigation.append(img_div);
 
   const links = document.createElement('ul');
+  links.className = 'navigationBar';
+  
 
   homeLink.textContent = 'Home';
   const homeItem = document.createElement('li');
+
   homeItem.appendChild(homeLink);
   links.appendChild(homeItem);
   

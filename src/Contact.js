@@ -22,4 +22,4 @@ const contact_us = () => {
   `;
   return contact;
 };
-export default contact_us
+export default contact_us;

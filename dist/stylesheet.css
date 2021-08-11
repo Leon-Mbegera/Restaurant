@@ -1,0 +1,24 @@
+body {
+  margin: 0 1rem;
+
+}
+.shop-logo {
+  height: 100px;
+}
+
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.navigationBar > li {
+  font-weight: bold;
+  color: chocolate;
+  margin-left: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 5px solid brown;
+}
+
+

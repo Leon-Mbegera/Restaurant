@@ -49,7 +49,7 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/french-vanilla.jpg',
+      './images/french-vanilla.jpg',
       'French Vanilla',
       'Made with whole milk and granulated sugar, and heated over medium heat until steaming',
       'ksh. 1,475'
@@ -57,7 +57,7 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/hot-chocolate.jpg',
+      './images/hot-chocolate.jpg',
       'Hot Chocolate',
       'Made with combined milk, cocoa powder, and semi sweet chocolate, and brought to a simmer',
       'ksh. 1,600'

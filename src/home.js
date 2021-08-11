@@ -12,7 +12,9 @@ const about =()=> {
   large_div.className = 'large_div';
 
   const left_div = document.createElement('div');
-  left_div.setAttribute("src", "./images/Coffee.jpeg");
+  const welcomeImage = document.createElement('img');
+  welcomeImage.setAttribute("src", "./images/Coffee.jpeg");
+  left_div.append(welcomeImage);
   large_div.append(left_div);
 
   const right_div = document.createElement('div');
