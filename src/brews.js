@@ -25,7 +25,7 @@ const coffeeMenu = () => {
   const menu = document.createElement('div');
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/cappuccino.jpg',
+      './images/cappuccino.jpg',
       'Cappuccino',
       'Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam',
       'ksh. 1,350'
@@ -33,7 +33,7 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/cappuccino.jpg',
+      './images/cappuccino.jpg',
       'Cappuccino',
       'Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam',
       'ksh. 1,350'
@@ -41,7 +41,7 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/caramel-macchiato.jpg',
+      './images/caramel-macchiato.jpg',
       'Caramel Macchiato',
       'Made with vanilla syrup, steamed milk, espresso and caramel sauce',
       'ksh. 1,150'
@@ -65,7 +65,7 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/latte.jpg',
+      './images/latte.jpg',
       'Italian latte',
       'The hot milk and creamy milk foam are imbued with the delicious flavour of coffee',
       'ksh. 1,800'
@@ -73,20 +73,20 @@ const coffeeMenu = () => {
     );
 
     menu.appendChild(coffeeBrewMenu(
-      './dist/images/mocha.jpg',
+      './images/mocha.jpg',
       'Cappuccino',
       'Is a chocolate-flavoured warm beverage that is a variant of a caffè latte',
       'ksh. 1,350'
       ),
     );
   
-  return menu;
+   return menu;
 };
 
 const showMenu = () => {
   const mainMenu = document.createElement('div');
   mainMenu.textContent = '';
-  mainMenu.appendChild(CoffeMenu);
+  mainMenu.append(coffeeMenu());
   return mainMenu;
 };
 
