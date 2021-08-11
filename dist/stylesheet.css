@@ -45,5 +45,12 @@ body {
   margin: 0 auto;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
 
-
+.contactUs {
+  text-align: center;
+}

@@ -1,1 +1,126 @@
-(()=>{"use strict";const e=document.createElement("a"),t=document.createElement("a"),a=document.createElement("a"),n=(e,t,a,n)=>{const o=document.createElement("div"),c=document.createElement("img");c.src=e,o.appendChild(c);const d=document.createElement("h3");d.textContent=t,o.appendChild(d);const i=document.createElement("p");i.textContent=a,o.appendChild(i);const r=document.createElement("p");return r.textContent=n,o.appendChild(r),o},o=(()=>{const n=document.createElement("div");n.className="d-flex justify-content-between";const o=document.createElement("div"),c=document.createElement("img");c.className="shop-logo",c.setAttribute("src","./images/logo.png"),o.append(c),n.append(o);const d=document.createElement("ul");d.className="navigationBar",e.textContent="Home";const i=document.createElement("li");i.appendChild(e),d.appendChild(i),t.textContent="Menu";const r=document.createElement("li");r.appendChild(t),d.appendChild(r),a.textContent="Contact Us";const s=document.createElement("li");return s.appendChild(a),d.appendChild(s),n.appendChild(d),n})(),c=(()=>{const e=document.createElement("section");e.className="home";const t=document.createElement("h1");t.textContent="Welcome to Mbegera's Coffee",t.className="heading",e.append(t);const a=document.createElement("div");a.className="d-flex flex-row";const n=document.createElement("div"),o=document.createElement("img");o.className="big-image",o.setAttribute("src","./images/Coffee.jpeg"),n.append(o),a.append(n);const c=document.createElement("div");return c.textContent="At Mbegera's, we take great care to serve quality, great-tasting menu items to our customers each and every time they visit our restaurants. We understand that each of our customers has individual needs and considerations when choosing a place to eat or drink outside their home, especially those customers with food allergies. As part of our commitment to you, we provide the most current ingredient information available from our food suppliers for the eight most common allergens",c.className="paragraph",a.append(c),e.append(a),e})(),d=(()=>{const e=document.createElement("div");return e.textContent="",e.append((()=>{const e=document.createElement("div");return e.appendChild(n("./images/cappuccino.jpg","Cappuccino","Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam","ksh. 1,350")),e.appendChild(n("./images/cappuccino.jpg","Cappuccino","Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam","ksh. 1,350")),e.appendChild(n("./images/caramel-macchiato.jpg","Caramel Macchiato","Made with vanilla syrup, steamed milk, espresso and caramel sauce","ksh. 1,150")),e.appendChild(n("./images/french-vanilla.jpg","French Vanilla","Made with whole milk and granulated sugar, and heated over medium heat until steaming","ksh. 1,475")),e.appendChild(n("./images/hot-chocolate.jpg","Hot Chocolate","Made with combined milk, cocoa powder, and semi sweet chocolate, and brought to a simmer","ksh. 1,600")),e.appendChild(n("./images/latte.jpg","Italian latte","The hot milk and creamy milk foam are imbued with the delicious flavour of coffee","ksh. 1,800")),e.appendChild(n("./images/mocha.jpg","Cappuccino","Is a chocolate-flavoured warm beverage that is a variant of a caffè latte","ksh. 1,350")),e})()),e})(),i=(()=>{const e=document.createElement("div");return e.innerHTML="\n    <div>\n      <div>\n        <h1>Feel free to reach us..</h1>\n      </div>\n      <div>\n        <p>We are located at Kenyatta Avenue, Latema strt, opposite National Achives, Nairobi CBD.</p>\n        <p>Call us: (+254) 222 444 600</p>\n      </div>\n      <div>\n        <h3>Leave us a message..</h3>\n        <form>\n          <input type='email' placeholder='your email...'><br>\n          <textarea placeholder='leave us your thoughts...'></textarea><br><br>\n          <button>Send</button>\n        </form>\n      </div>\n    </div>\n  ",e})(),r=document.querySelector("#content");r.append(o);const s=e=>{r.innerHTML="",r.append(o,e)};e.addEventListener("click",(()=>{s(c)})),t.addEventListener("click",(()=>{s(d)})),a.addEventListener("click",(()=>{s(i)}))})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/brews.js":
+/*!**********************!*\
+  !*** ./src/brews.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst coffeeBrewMenu = (brew_image, brew_name, brew_desc, brew_price,) => {\r\n\r\n  const coffeeBrews = document.createElement('div');\r\n\r\n  const brewImage = document.createElement('img');\r\n  brewImage.src = brew_image;\r\n  coffeeBrews.appendChild(brewImage);\r\n\r\n  const brewName = document.createElement('h3');\r\n  brewName.textContent = brew_name;\r\n  coffeeBrews.appendChild(brewName);\r\n\r\n  const brewDesc = document.createElement('p');\r\n  brewDesc.textContent = brew_desc;\r\n  coffeeBrews.appendChild(brewDesc);\r\n\r\n  const brewPrice = document.createElement('p');\r\n  brewPrice.textContent = brew_price;\r\n  coffeeBrews.appendChild(brewPrice);\r\n\r\n  return coffeeBrews;\r\n};\r\n\r\nconst coffeeMenu = () => {\r\n  const menu = document.createElement('div');\r\n  menu.className = 'menu-grid';\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/cappuccino.jpg',\r\n      'Cappuccino',\r\n      'Traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam',\r\n      'ksh. 1,350'\r\n      ),\r\n    );\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/caramel-macchiato.jpg',\r\n      'Caramel Macchiato',\r\n      'Made with vanilla syrup, steamed milk, espresso and caramel sauce',\r\n      'ksh. 1,150'\r\n      ),\r\n    );\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/french-vanilla.jpg',\r\n      'French Vanilla',\r\n      'Made with whole milk and granulated sugar, and heated over medium heat until steaming',\r\n      'ksh. 1,475'\r\n      ),\r\n    );\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/hot-chocolate.jpg',\r\n      'Hot Chocolate',\r\n      'Made with combined milk, cocoa powder, and semi sweet chocolate, and brought to a simmer',\r\n      'ksh. 1,600'\r\n      ),\r\n    );\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/latte.jpg',\r\n      'Italian latte',\r\n      'The hot milk and creamy milk foam are imbued with the delicious flavour of coffee',\r\n      'ksh. 1,800'\r\n      ),\r\n    );\r\n\r\n    menu.appendChild(coffeeBrewMenu(\r\n      './images/mocha.jpg',\r\n      'Cappuccino',\r\n      'Is a chocolate-flavoured warm beverage that is a variant of a caffè latte',\r\n      'ksh. 1,350'\r\n      ),\r\n    );\r\n  \r\n   return menu;\r\n};\r\n\r\nconst showMenu = () => {\r\n  const mainMenu = document.createElement('div');\r\n  mainMenu.textContent = '';\r\n  mainMenu.append(coffeeMenu());\r\n  return mainMenu;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showMenu);\n\n//# sourceURL=webpack://restaurant/./src/brews.js?");
+
+/***/ }),
+
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst contact_us = () => {\r\n  const contact = document.createElement('div');\r\n  contact.className = 'contactUs';\r\n\r\n  const h1 = document.createElement('h1');\r\n  h1.className = 'heading';\r\n  h1.textContent = 'Feel free to reach us..';\r\n  contact.append(h1);\r\n\r\n  const p = document.createElement('p');\r\n  p.textContent = 'We are located at Kenyatta Avenue, Latema strt, opposite National Achives, Nairobi CBD.';\r\n  contact.append(p);\r\n\r\n  \r\n\r\n\r\n  \r\n  return contact;\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact_us);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"homeLink\": () => (/* binding */ homeLink),\n/* harmony export */   \"menuLink\": () => (/* binding */ menuLink),\n/* harmony export */   \"contactLink\": () => (/* binding */ contactLink),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst homeLink = document.createElement('a'); \r\nconst menuLink = document.createElement('a');\r\nconst contactLink = document.createElement('a');\r\n\r\nconst header = () => {\r\n  const navigation = document.createElement('div');\r\n  navigation.className = 'd-flex justify-content-between';\r\n\r\n  const img_div = document.createElement('div');\r\n  const logo = document.createElement('img');\r\n  logo.className = 'shop-logo'\r\n  logo.setAttribute(\"src\", \"./images/logo.png\");\r\n  img_div.append(logo);\r\n  navigation.append(img_div);\r\n\r\n  const links = document.createElement('ul');\r\n  links.className = 'navigationBar';\r\n  \r\n\r\n  homeLink.textContent = 'Home';\r\n  const homeItem = document.createElement('li');\r\n\r\n  homeItem.appendChild(homeLink);\r\n  links.appendChild(homeItem);\r\n  \r\n\r\n  menuLink.textContent = 'Menu';\r\n  const menuItem = document.createElement('li');\r\n  menuItem.appendChild(menuLink);\r\n  links.appendChild(menuItem);\r\n\r\n  contactLink.textContent = 'Contact Us';\r\n  const contactItem = document.createElement('li');\r\n  contactItem.appendChild(contactLink);\r\n  links.appendChild(contactItem);\r\n\r\n  navigation.appendChild(links);\r\n  return navigation;\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n//# sourceURL=webpack://restaurant/./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst about =()=> {\r\n\r\n  const section = document.createElement('section');\r\n  section.className = 'home';\r\n\r\n  const heading = document.createElement(\"h1\");\r\n  heading.textContent = \"Welcome to Mbegera's Coffee\";\r\n  heading.className = 'heading';\r\n  section.append(heading);\r\n\r\n  const large_div = document.createElement('div');\r\n  large_div.className = 'd-flex flex-row';\r\n\r\n  const left_div = document.createElement('div');\r\n  const welcomeImage = document.createElement('img');\r\n  welcomeImage.className = 'big-image';\r\n  welcomeImage.setAttribute(\"src\", \"./images/Coffee.jpeg\");\r\n  left_div.append(welcomeImage);\r\n  large_div.append(left_div);\r\n\r\n  const right_div = document.createElement('div');\r\n  right_div.textContent = \"At Mbegera's, we take great care to serve quality, great-tasting menu items to our customers each and every time they visit our restaurants. We understand that each of our customers has individual needs and considerations when choosing a place to eat or drink outside their home, especially those customers with food allergies. As part of our commitment to you, we provide the most current ingredient information available from our food suppliers for the eight most common allergens\";\r\n  right_div.className = 'paragraph'\r\n  large_div.append(right_div);\r\n  \r\n  section.append(large_div);\r\n\r\n  return section;\r\n}\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (about);\r\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _brews_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./brews.js */ \"./src/brews.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst navSection = (0,_header_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\nconst homePage = (0,_home_js__WEBPACK_IMPORTED_MODULE_1__.default)();\r\nconst menuPage = (0,_brews_js__WEBPACK_IMPORTED_MODULE_2__.default)();\r\nconst contactPage = (0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.default)();\r\n\r\nconst content = document.querySelector('#content');\r\ncontent.append(navSection)\r\n\r\nconst viewTab = (tab) => {\r\n  content.innerHTML = '';\r\n  content.append(navSection, tab);\r\n}\r\n\r\n_header_js__WEBPACK_IMPORTED_MODULE_0__.homeLink.addEventListener('click', ()=>{viewTab(homePage)});\r\n_header_js__WEBPACK_IMPORTED_MODULE_0__.menuLink.addEventListener('click', ()=>{viewTab(menuPage)});\r\n_header_js__WEBPACK_IMPORTED_MODULE_0__.contactLink.addEventListener('click', ()=>{viewTab(contactPage)});\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
