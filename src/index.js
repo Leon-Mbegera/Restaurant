@@ -2,7 +2,7 @@ import header, { homeLink, menuLink, contactLink } from './header.js';
 
 import about from './home.js';
 import showMenu from './brews.js';
-import contactUs from './contact.js';
+import contactUs from './Contact.js';
 
 const navSection = header();
 const homePage = about();
