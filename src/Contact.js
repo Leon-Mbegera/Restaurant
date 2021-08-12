@@ -1,9 +1,9 @@
 const contact_us = () => {
   const contact = document.createElement('div');
-  contact.className = 'contactUs';
+  contact.className = 'contactUs home';
 
   const h1 = document.createElement('h1');
-  h1.className = 'heading';
+  h1.className = 'center';
   h1.textContent = 'Feel free to reach us..';
   contact.append(h1);
 

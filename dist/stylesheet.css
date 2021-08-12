@@ -10,6 +10,14 @@ body {
   height: 100px;
 }
 
+.header {
+  background-color: whitesmoke;
+}
+
+.home {
+  background-color:snow;
+}
+
 .navigationBar {
   display: flex;
   flex-direction: row;
@@ -25,24 +33,26 @@ body {
   border-bottom: 5px solid brown;
 }
 
-.heading {
-  text-align: center;
-  font-weight: bold;
-}
-
 .large-div {
   display: flex;
   flex-direction: row;
 }
 
 .big-image {
-  height: 27rem;
+  margin-top: 1rem;
+  height: 28rem;
   width: 50rem;
+}
+
+.heading {
+  font-weight: bold;
+  width: 20rem;
+  margin: 1rem 3rem;
 }
 
 .paragraph {
   width: 20rem;
-  margin: 0 auto;
+  margin: 0 3rem;
 }
 
 .menu-grid {
@@ -51,7 +61,7 @@ body {
   grid-gap: 1rem;
 }
 
-.contactUs {
+.contactUs, center {
   text-align: center;
 }
 

@@ -23,7 +23,7 @@ const coffeeBrewMenu = (brew_image, brew_name, brew_desc, brew_price,) => {
 
 const coffeeMenu = () => {
   const menu = document.createElement('div');
-  menu.className = 'menu-grid';
+  menu.className = 'menu-grid home';
 
     menu.appendChild(coffeeBrewMenu(
       './images/cappuccino.jpg',

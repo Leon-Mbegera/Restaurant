@@ -4,7 +4,7 @@ export const contactLink = document.createElement('a');
 
 const header = () => {
   const navigation = document.createElement('div');
-  navigation.className = 'd-flex justify-content-between';
+  navigation.className = 'd-flex justify-content-between header';
 
   const img_div = document.createElement('div');
   const logo = document.createElement('img');
