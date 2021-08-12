@@ -3,7 +3,7 @@
 Restaurant is a website for my coffee shop that has three parts to it. One, a warm and welcoming home page with an image of the restaurant and some good message. And, a menu page showing what we serve at the spot. It also has a contacts page where we've given details of our location and contacts for customers to feel free to reach us.
 
 ### home page screenshot
-![screenshot](./images/homeScreen.png)
+![screenshot](dist/images/homeScreen.png)
 
 ## Built with
 - Js
