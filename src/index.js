@@ -1,8 +1,8 @@
-import { homeLink, menuLink, contactLink } from "./header.js";
-import header from "./header.js";
-import about from "./home.js";
-import showMenu from "./brews.js";
-import contactUs from "./contact.js";
+import header, { homeLink, menuLink, contactLink } from './header';
+
+import about from './home';
+import showMenu from './brews';
+import contactUs from './contact';
 
 const navSection = header();
 const homePage = about();
@@ -15,9 +15,9 @@ content.append(navSection);
 const viewTab = (tab) => {
   content.innerHTML = '';
   content.append(navSection, tab);
-}
+};
 
-homeLink.addEventListener('click', ()=>{viewTab(homePage)});
-menuLink.addEventListener('click', ()=>{viewTab(menuPage)});
-contactLink.addEventListener('click', ()=>{viewTab(contactPage)});
+homeLink.addEventListener('click', () => { viewTab(homePage); });
+menuLink.addEventListener('click', () => { viewTab(menuPage); });
+contactLink.addEventListener('click', () => { viewTab(contactPage); });
 viewTab(homePage);

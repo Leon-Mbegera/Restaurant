@@ -48,12 +48,12 @@ const contactUs = () => {
   formDiv.append(form);
   contact.append(formDiv);
 
-  const submit = document.createElement("input");
-  submit.setAttribute("type", "submit");
+  const submit = document.createElement('input');
+  submit.setAttribute('type', 'submit');
   form.append(submit);
   formDiv.append(form);
   contact.append(formDiv);
-  
+
   return contact;
 };
 export default contactUs;
