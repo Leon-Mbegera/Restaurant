@@ -1,8 +1,8 @@
-import header, { homeLink, menuLink, contactLink } from './header';
+import header, { homeLink, menuLink, contactLink } from './header.js';
 
-import about from './home';
-import showMenu from './brews';
-import contactUs from './contact';
+import about from './home.js';
+import showMenu from './brews.js';
+import contactUs from './contact.js';
 
 const navSection = header();
 const homePage = about();
