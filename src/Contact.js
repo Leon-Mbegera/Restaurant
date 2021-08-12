@@ -1,6 +1,6 @@
-const contact_us = () => {
+const contactUs = () => {
   const contact = document.createElement('div');
-  contact.className = 'contactUs home';
+  contact.className = 'center home';
 
   const h1 = document.createElement('h1');
   h1.className = 'center';
@@ -56,4 +56,4 @@ const contact_us = () => {
   
   return contact;
 };
-export default contact_us;
+export default contactUs;

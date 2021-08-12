@@ -1,21 +1,21 @@
-const coffeeBrewMenu = (brew_image, brew_name, brew_desc, brew_price,) => {
+const coffeeBrewMenu = (coffeeImage, coffeeName, coffeeDesc, coffeePrice,) => {
 
   const coffeeBrews = document.createElement('div');
 
   const brewImage = document.createElement('img');
-  brewImage.src = brew_image;
+  brewImage.src = coffeeImage;
   coffeeBrews.appendChild(brewImage);
 
   const brewName = document.createElement('h3');
-  brewName.textContent = brew_name;
+  brewName.textContent = coffeeName;
   coffeeBrews.appendChild(brewName);
 
   const brewDesc = document.createElement('p');
-  brewDesc.textContent = brew_desc;
+  brewDesc.textContent = coffeeDesc;
   coffeeBrews.appendChild(brewDesc);
 
   const brewPrice = document.createElement('p');
-  brewPrice.textContent = brew_price;
+  brewPrice.textContent = coffeePrice;
   coffeeBrews.appendChild(brewPrice);
 
   return coffeeBrews;
