@@ -1,0 +1,81 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0 1rem;
+
+}
+.shop-logo {
+  height: 100px;
+}
+
+.header {
+  background-color: whitesmoke;
+}
+
+.home {
+  background-color:snow;
+}
+
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.navigationBar > li {
+  font-weight: bold;
+  color: chocolate;
+  margin-left: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 5px solid brown;
+}
+
+.large-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.big-image {
+  margin-top: 1rem;
+  height: 28rem;
+  width: 50rem;
+}
+
+.heading {
+  font-weight: bold;
+  width: 20rem;
+  margin: 1rem 3rem;
+}
+
+.paragraph {
+  width: 20rem;
+  margin: 0 3rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+form > input, textarea {
+  display: block;
+  margin-bottom: 2rem;
+  margin-left: 32%;
+}
+
+.email-label {
+  margin-bottom: 0;
+  margin-left: -32%;
+}
+
+.text-label {
+  margin: auto auto 0 -19.5%;
+}
