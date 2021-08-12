@@ -60,3 +60,12 @@ form > input, textarea {
   margin-bottom: 2rem;
   margin-left: 32%;
 }
+
+.email-label {
+  margin-bottom: 0;
+  margin-left: -32%;
+}
+
+.text-label {
+  margin: auto auto 0 -19.5%;
+}

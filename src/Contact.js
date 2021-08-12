@@ -19,6 +19,7 @@ const contact_us = () => {
   const form = document.createElement('form');
 
   const emailLabel = document.createElement('label');
+  emailLabel.className = 'email-label';
   const label = document.createTextNode('Email');
   emailLabel.append(label);
   form.append(emailLabel);
@@ -33,6 +34,7 @@ const contact_us = () => {
   contact.append(formDiv);
 
   const textLabel = document.createElement('label');
+  textLabel.className = 'text-label';
   const text = document.createTextNode('Leave us some feedback');
   textLabel.append(text);
   form.append(textLabel);
